@@ -1,4 +1,4 @@
-import { createRouter } from "../../index.ts";
+import { createRouter } from "../../../index.ts";
 
 export default createRouter("/async", "GET", async () => {
   return new Promise((resolve) => {
