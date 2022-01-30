@@ -24,8 +24,7 @@ export const startServer = ({ port, router }: ServerOpts) => {
     }
 
     if (!requestHandler) {
-      requestHandler = () =>
-        new Response("oopsie doopsie, that doesn't exist", { status: 404 });
+      requestHandler = () => new Response("Not found", { status: 404 });
     }
 
     return requestHandler(req);
